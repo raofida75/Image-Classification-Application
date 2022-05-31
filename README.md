@@ -10,6 +10,5 @@ In addition, I developed an advanced classifier using semi-supervised GAN. It is
 
 Lastly, built an application using stream-lit where user uploads an image and the model classifies the traffic sign.
 
-![Screenshot](APP.png)
-
+<img src="https://github.com/raofida75/Image-Classification-Application/blob/main/APP.png" width="750"/>
 
