@@ -14,7 +14,7 @@ Download the dataset from kaggle. I have used pickle to save the training datase
 3 - Semi Supervised GAN
 
 ## [Neural Network from scratch](https://github.com/raofida75/Image-Classification-Application/blob/main/1.%20NN%20from%20scratch/Traffic_Sign_Classifier_NumPy.ipynb)
-Following helper functions were created to successfully build a Neural Network from scratch
+Following steps were performed to successfully build a Neural Network from scratch
 
 1 - Initializing of Parameters: Use random initialization for the weight matrices, while zero initialization for the biases.
 
