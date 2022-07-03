@@ -2,7 +2,7 @@
 
 In this project, I used Python and TensorFlow to classify traffic signs.
 
-Dataset used: (German Traffic Sign Dataset)[https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign]. This dataset has more than 50,000 images of 43 classes.
+Dataset used: [German Traffic Sign Dataset](https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign). This dataset has more than 50,000 images of 43 classes.
 
 Used a dataset of traffic sign images to perform image classification.
 
