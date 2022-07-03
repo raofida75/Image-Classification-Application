@@ -26,10 +26,29 @@ Following helper functions were created to successfully build a Neural Network f
 Created a Neural Network from scratch using numPy with an accuracy of 87%. Adam Optimizer was also implemented from scratch. Overfitting was reduced by using regularization and drop-out techniques. PCA was used to reduce image features without any significant loss in the quality of the images, which accelerated training speed. 
 
 ## Implementing various [CNN architecture such as Inception and ResNet](https://github.com/raofida75/Image-Classification-Application/blob/main/2.%20CNN/Traffic_Sign_Classifier_Keras.ipynb)
-The performance of the model was further improved by employing advanced CNN architectures with Keras such as Inception, Resnet, etc. 
+#### EDA
+Starting off with visualizing the images randomly and then check the class balance in the dataset. It was found that some classes such as 1,2,12,13 etc contained significantly more images than classes such as 6,14,21,29 etc.
+#### Data Preprocessing
+Convert the datatype of images and their corresponding labels to numpy arrays.
+Shuffle the dataset.
+Split the training dataset into a training and validation datasets.
+Normalize the images to a range of [0,1].
+One hot encode the labels.
+Data Augmentation such as distorting the images along an axis using shear range and zooming in and out using the zoom range.
+#### Image Classification
+Now I will use tensorflow to employ advanced CNN architectures such as Inception, Resnet, etc. to further improve the performance of the previous model.
+With Convolutional Neural Network, I was able to achieve 96 percent accuracy, and this model was saved because it will be used to create a streamlit-based web application.
 
 ## [Semi Supervised Classification with GAN](https://github.com/raofida75/Image-Classification-Application/blob/main/3.%20Semi-supervised%20GAN/Semi_Supervised_Classification_with_GAN.ipynb) 
-In addition, I developed an advanced classifier using semi-supervised GAN. It is useful if we do not have the entire dataset labelled. This model was able to achieve 87% accuracy with just 20% labelled data.
+In addition, I developed an advanced classifier using semi-supervised GAN. Semi-supervised learning is a method of training a classifier that employs both labelled and unlabeled data. This classifier utilises a small amount of labelled data and a large amount of unlabeled data. We will train a Deep CNN using these data sources to learn a function capable to assigning a desired label to a new datapoint. 
+
+Steps for training the Semi Supervised GAN includes: 
+  Using a subset of supervised samples to train a classification layer in discriminator.
+  Train the discriminator layer by feeding it real and fake samples. If it is unable to distinguish between real and fake images, it will be penalised.
+  Feed the noise to a generator, and it will output the fake images. If the discriminator can distinguish between real and fake images, the generator will  be penalised.
+  Finally, evaluate the semi-supervised GAN's performance by displaying different evaluating metrics for the classifier.
+
+This model was able to achieve 87% accuracy with just 20% labelled data.
 
 ## [Application](https://github.com/raofida75/Image-Classification-Application/blob/main/app.py)
 Lastly, built an application using stream-lit where user uploads an image and the model classifies the traffic sign.
