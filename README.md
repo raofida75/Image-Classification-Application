@@ -6,8 +6,11 @@ Dataset used: [German Traffic Sign Dataset](https://www.kaggle.com/datasets/meow
 
 ## Data Preparation
 Download the dataset from kaggle. I have used pickle to save the training dataset and testing dataset after loading the images and resizing them to 32 x 32. Now I will used these pickled file to perform image classification using three different techniques i.e
+
 1 - Neural network from scratch
+
 2 - Various CNN architectures such as ResNet and Inception
+
 3 - Semi Supervised GAN
 
 ## [Neural Network from scratch](https://github.com/raofida75/Image-Classification-Application/blob/main/1.%20NN%20from%20scratch/Traffic_Sign_Classifier_NumPy.ipynb)
