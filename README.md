@@ -42,12 +42,12 @@ With Convolutional Neural Network, I was able to achieve <b>96 percent</b> accur
 ## [Semi Supervised Classification with GAN](https://github.com/raofida75/Image-Classification-Application/blob/main/3.%20Semi-supervised%20GAN/Semi_Supervised_Classification_with_GAN.ipynb) 
 In addition, I developed an advanced classifier using semi-supervised GAN. Semi-supervised learning is a method of training a classifier that employs both labelled and unlabeled data. This classifier utilises a small amount of labelled data and a large amount of unlabeled data. We will train a Deep CNN using these data sources to learn a function capable to assigning a desired label to a new datapoint. 
 
-Steps for training the Semi Supervised GAN includes: 
+#### Steps for training the Semi Supervised GAN includes: 
   Using a subset of supervised samples to train a classification layer in discriminator.
   Train the discriminator layer by feeding it real and fake samples. If it is unable to distinguish between real and fake images, it will be penalised.
   Feed the noise to a generator, and it will output the fake images. If the discriminator can distinguish between real and fake images, the generator will  be penalised.
   Finally, evaluate the semi-supervised GAN's performance by displaying different evaluating metrics for the classifier.
-
+#### Result
 This model was able to achieve <i><b>87%</b></i> accuracy with just <b>20%</b> labelled data.
 
 ## [Application](https://github.com/raofida75/Image-Classification-Application/blob/main/app.py)
