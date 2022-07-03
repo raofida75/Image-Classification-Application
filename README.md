@@ -48,7 +48,7 @@ Steps for training the Semi Supervised GAN includes:
   Feed the noise to a generator, and it will output the fake images. If the discriminator can distinguish between real and fake images, the generator will  be penalised.
   Finally, evaluate the semi-supervised GAN's performance by displaying different evaluating metrics for the classifier.
 
-This model was able to achieve <b>87%</b> accuracy with just <b>20%</b> labelled data.
+This model was able to achieve <i><b>87%</b></i> accuracy with just <b>20%</b> labelled data.
 
 ## [Application](https://github.com/raofida75/Image-Classification-Application/blob/main/app.py)
 Lastly, built an application using stream-lit where user uploads an image and the model classifies the traffic sign.
