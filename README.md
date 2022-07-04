@@ -16,7 +16,7 @@ Download the dataset from kaggle. I have used pickle to save the training datase
 ## [Neural Network from scratch](https://github.com/raofida75/Image-Classification-Application/blob/main/1.%20NN%20from%20scratch/Traffic_Sign_Classifier_NumPy.ipynb)
 Following steps were performed to successfully build a Neural Network from scratch
 
-1 - Initializing of Parameters: Use random initialization for the weight matrices, while zero initialization for the biases.
+1 - Initialization of Parameters: Use random initialization for the weight matrices, while zero initialization for the biases.
 
 2 - Forward Propagation: The input data is fed forward through the network. Each hidden layer accepts input data, processes it according to the activation function, and then passes it on to the next layer.
 
