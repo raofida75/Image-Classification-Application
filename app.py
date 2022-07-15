@@ -18,7 +18,7 @@ def process_image(image):
     image = image / 255
     return image
 
-model=load_model('saved_models/best_model.h5')
+model=load_model('models/cnn_model.h5')
 
 
 def predict(image):
@@ -32,7 +32,7 @@ def predict(image):
     prob = np.max(pred_prob)
     pred = np.argmax(pred_prob)
     # reading names of the signs
-    sign_names = pd.read_csv('Data/signnames.csv')
+    sign_names = pd.read_csv('data/signnames.csv')
     # returning the corresponding sign name
     label = sign_names.iloc[pred].values[1]
     return prob, label
