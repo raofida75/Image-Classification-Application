@@ -36,8 +36,8 @@ def shuffle_dataset(X, y):
 # combining all the above functions to read all the data and preprocess it.
 def load_dataset():
     
-    X_train, y_train = read_file('Data/train.pkl')
-    X_test, y_test = read_file('Data/test.pkl')
+    X_train, y_train = read_file('../data/train.pkl')
+    X_test, y_test = read_file('../data/test.pkl')
     
     X_train, y_train = shuffle_dataset(X_train, y_train)
     X_test, y_test = shuffle_dataset(X_test, y_test)

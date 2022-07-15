@@ -15,7 +15,7 @@ img_dim = 32
 n = 43
 
 ######################### Loading Training Data ########################
-train_path = 'Data/Training/'
+train_path = '../data/images/Training/'
 
 n_path = [] 
 for i in range(n):
@@ -49,13 +49,13 @@ for class_folder in n_path:
         X_train.append(img)
         y_train.append(label)
         
-with open('Data/train.pkl','wb') as f:
+with open('..data/train.pkl','wb') as f:
     pickle.dump((X_train,y_train), f)
 
 
 ######################### Loading Testing Data ########################
 
-test_path = 'Data/Testing/'
+test_path = '../data/images/Testing/'
 
 df = pd.read_csv(f'{test_path}Test.csv')
 img_dim = 32
@@ -76,7 +76,7 @@ for j in os.listdir(test_path):
         y_test.append(label)
 
 
-with open('Data/test.pkl','wb') as f:
+with open('../data/test.pkl','wb') as f:
     pickle.dump((X_test,y_test), f)
 
 
